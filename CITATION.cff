@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this data or documentation, please cite it as below. The paper is under review; author details and the full citation will be added on publication."
+type: dataset
+title: "Quantization Effects on Stochastic Consistency in Clinical Note Generation Using Small Language Models — supplementary material"
+authors:
+  - name: "Author details withheld during review"
+year: 2026
+url: "https://github.com/zephyrhasib/clinical-slm-consistency"
+repository-code: "https://github.com/zephyrhasib/clinical-slm-consistency"
+license: CC-BY-4.0
+keywords:
+  - stochastic consistency
+  - GGUF quantization
+  - small language models
+  - clinical note generation
+  - reference-free evaluation
