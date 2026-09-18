@@ -1,0 +1,27 @@
+# Model weights — never commit (link to HuggingFace instead)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+models/
+
+# Raw generations and large intermediates — not distributed
+outputs/main_run/
+outputs/nli_proof/verify/
+*.jsonl
+
+# Environments
+venv/
+venv_*/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
