@@ -1,0 +1,575 @@
+{
+  "generated_at": "2026-05-23T01:26:57Z",
+  "source_file": "data/aci-bench-main/resources/semantic_types.txt",
+  "source_file_sha256": "b8d44c26ad236cc0f64065b420ade8756ad64a23f4cfdcae1f8b4aac534efd7e",
+  "method_reference": "data/aci-bench-main/evaluation/semantics.py",
+  "method_reference_sha256": "e8e169acde5e0dcd54bebbba09fa4e090a8ee477225c59d500d0069691f7ef92",
+  "exclusion_list": [
+    "Procedures",
+    "Organizations",
+    "Occupations",
+    "Living Beings",
+    "Objects",
+    "Geographic Areas",
+    "Concepts & Ideas",
+    "Activities & Behaviors"
+  ],
+  "included_groups": [
+    "Anatomy",
+    "Chemicals & Drugs",
+    "Devices",
+    "Disorders",
+    "Genes & Molecular Sequences",
+    "Phenomena",
+    "Physiology"
+  ],
+  "n_included_tuis": 66,
+  "tuis_by_group": {
+    "Anatomy": [
+      "T017",
+      "T018",
+      "T021",
+      "T022",
+      "T023",
+      "T024",
+      "T025",
+      "T026",
+      "T029",
+      "T030",
+      "T031"
+    ],
+    "Chemicals & Drugs": [
+      "T103",
+      "T104",
+      "T109",
+      "T114",
+      "T116",
+      "T120",
+      "T121",
+      "T122",
+      "T123",
+      "T125",
+      "T126",
+      "T127",
+      "T129",
+      "T130",
+      "T131",
+      "T192",
+      "T195",
+      "T196",
+      "T197",
+      "T200"
+    ],
+    "Devices": [
+      "T074",
+      "T075",
+      "T203"
+    ],
+    "Disorders": [
+      "T019",
+      "T020",
+      "T033",
+      "T037",
+      "T046",
+      "T047",
+      "T048",
+      "T049",
+      "T050",
+      "T184",
+      "T190",
+      "T191"
+    ],
+    "Genes & Molecular Sequences": [
+      "T028",
+      "T085",
+      "T086",
+      "T087",
+      "T088"
+    ],
+    "Phenomena": [
+      "T034",
+      "T038",
+      "T067",
+      "T068",
+      "T069",
+      "T070"
+    ],
+    "Physiology": [
+      "T032",
+      "T039",
+      "T040",
+      "T041",
+      "T042",
+      "T043",
+      "T044",
+      "T045",
+      "T201"
+    ]
+  },
+  "all_tuis_sorted": [
+    "T017",
+    "T018",
+    "T019",
+    "T020",
+    "T021",
+    "T022",
+    "T023",
+    "T024",
+    "T025",
+    "T026",
+    "T028",
+    "T029",
+    "T030",
+    "T031",
+    "T032",
+    "T033",
+    "T034",
+    "T037",
+    "T038",
+    "T039",
+    "T040",
+    "T041",
+    "T042",
+    "T043",
+    "T044",
+    "T045",
+    "T046",
+    "T047",
+    "T048",
+    "T049",
+    "T050",
+    "T067",
+    "T068",
+    "T069",
+    "T070",
+    "T074",
+    "T075",
+    "T085",
+    "T086",
+    "T087",
+    "T088",
+    "T103",
+    "T104",
+    "T109",
+    "T114",
+    "T116",
+    "T120",
+    "T121",
+    "T122",
+    "T123",
+    "T125",
+    "T126",
+    "T127",
+    "T129",
+    "T130",
+    "T131",
+    "T184",
+    "T190",
+    "T191",
+    "T192",
+    "T195",
+    "T196",
+    "T197",
+    "T200",
+    "T201",
+    "T203"
+  ],
+  "included_details": [
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T017",
+      "type_name": "Anatomical Structure"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T029",
+      "type_name": "Body Location or Region"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T023",
+      "type_name": "Body Part, Organ, or Organ Component"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T030",
+      "type_name": "Body Space or Junction"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T031",
+      "type_name": "Body Substance"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T022",
+      "type_name": "Body System"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T025",
+      "type_name": "Cell"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T026",
+      "type_name": "Cell Component"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T018",
+      "type_name": "Embryonic Structure"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T021",
+      "type_name": "Fully Formed Anatomical Structure"
+    },
+    {
+      "group": "Anatomy",
+      "abbr": "ANAT",
+      "tui": "T024",
+      "type_name": "Tissue"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T116",
+      "type_name": "Amino Acid, Peptide, or Protein"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T195",
+      "type_name": "Antibiotic"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T123",
+      "type_name": "Biologically Active Substance"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T122",
+      "type_name": "Biomedical or Dental Material"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T103",
+      "type_name": "Chemical"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T120",
+      "type_name": "Chemical Viewed Functionally"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T104",
+      "type_name": "Chemical Viewed Structurally"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T200",
+      "type_name": "Clinical Drug"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T196",
+      "type_name": "Element, Ion, or Isotope"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T126",
+      "type_name": "Enzyme"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T131",
+      "type_name": "Hazardous or Poisonous Substance"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T125",
+      "type_name": "Hormone"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T129",
+      "type_name": "Immunologic Factor"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T130",
+      "type_name": "Indicator, Reagent, or Diagnostic Aid"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T197",
+      "type_name": "Inorganic Chemical"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T114",
+      "type_name": "Nucleic Acid, Nucleoside, or Nucleotide"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T109",
+      "type_name": "Organic Chemical"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T121",
+      "type_name": "Pharmacologic Substance"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T192",
+      "type_name": "Receptor"
+    },
+    {
+      "group": "Chemicals & Drugs",
+      "abbr": "CHEM",
+      "tui": "T127",
+      "type_name": "Vitamin"
+    },
+    {
+      "group": "Devices",
+      "abbr": "DEVI",
+      "tui": "T203",
+      "type_name": "Drug Delivery Device"
+    },
+    {
+      "group": "Devices",
+      "abbr": "DEVI",
+      "tui": "T074",
+      "type_name": "Medical Device"
+    },
+    {
+      "group": "Devices",
+      "abbr": "DEVI",
+      "tui": "T075",
+      "type_name": "Research Device"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T020",
+      "type_name": "Acquired Abnormality"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T190",
+      "type_name": "Anatomical Abnormality"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T049",
+      "type_name": "Cell or Molecular Dysfunction"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T019",
+      "type_name": "Congenital Abnormality"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T047",
+      "type_name": "Disease or Syndrome"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T050",
+      "type_name": "Experimental Model of Disease"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T033",
+      "type_name": "Finding"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T037",
+      "type_name": "Injury or Poisoning"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T048",
+      "type_name": "Mental or Behavioral Dysfunction"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T191",
+      "type_name": "Neoplastic Process"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T046",
+      "type_name": "Pathologic Function"
+    },
+    {
+      "group": "Disorders",
+      "abbr": "DISO",
+      "tui": "T184",
+      "type_name": "Sign or Symptom"
+    },
+    {
+      "group": "Genes & Molecular Sequences",
+      "abbr": "GENE",
+      "tui": "T087",
+      "type_name": "Amino Acid Sequence"
+    },
+    {
+      "group": "Genes & Molecular Sequences",
+      "abbr": "GENE",
+      "tui": "T088",
+      "type_name": "Carbohydrate Sequence"
+    },
+    {
+      "group": "Genes & Molecular Sequences",
+      "abbr": "GENE",
+      "tui": "T028",
+      "type_name": "Gene or Genome"
+    },
+    {
+      "group": "Genes & Molecular Sequences",
+      "abbr": "GENE",
+      "tui": "T085",
+      "type_name": "Molecular Sequence"
+    },
+    {
+      "group": "Genes & Molecular Sequences",
+      "abbr": "GENE",
+      "tui": "T086",
+      "type_name": "Nucleotide Sequence"
+    },
+    {
+      "group": "Phenomena",
+      "abbr": "PHEN",
+      "tui": "T038",
+      "type_name": "Biologic Function"
+    },
+    {
+      "group": "Phenomena",
+      "abbr": "PHEN",
+      "tui": "T069",
+      "type_name": "Environmental Effect of Humans"
+    },
+    {
+      "group": "Phenomena",
+      "abbr": "PHEN",
+      "tui": "T068",
+      "type_name": "Human-caused Phenomenon or Process"
+    },
+    {
+      "group": "Phenomena",
+      "abbr": "PHEN",
+      "tui": "T034",
+      "type_name": "Laboratory or Test Result"
+    },
+    {
+      "group": "Phenomena",
+      "abbr": "PHEN",
+      "tui": "T070",
+      "type_name": "Natural Phenomenon or Process"
+    },
+    {
+      "group": "Phenomena",
+      "abbr": "PHEN",
+      "tui": "T067",
+      "type_name": "Phenomenon or Process"
+    },
+    {
+      "group": "Physiology",
+      "abbr": "PHYS",
+      "tui": "T043",
+      "type_name": "Cell Function"
+    },
+    {
+      "group": "Physiology",
+      "abbr": "PHYS",
+      "tui": "T201",
+      "type_name": "Clinical Attribute"
+    },
+    {
+      "group": "Physiology",
+      "abbr": "PHYS",
+      "tui": "T045",
+      "type_name": "Genetic Function"
+    },
+    {
+      "group": "Physiology",
+      "abbr": "PHYS",
+      "tui": "T041",
+      "type_name": "Mental Process"
+    },
+    {
+      "group": "Physiology",
+      "abbr": "PHYS",
+      "tui": "T044",
+      "type_name": "Molecular Function"
+    },
+    {
+      "group": "Physiology",
+      "abbr": "PHYS",
+      "tui": "T032",
+      "type_name": "Organism Attribute"
+    },
+    {
+      "group": "Physiology",
+      "abbr": "PHYS",
+      "tui": "T040",
+      "type_name": "Organism Function"
+    },
+    {
+      "group": "Physiology",
+      "abbr": "PHYS",
+      "tui": "T042",
+      "type_name": "Organ or Tissue Function"
+    },
+    {
+      "group": "Physiology",
+      "abbr": "PHYS",
+      "tui": "T039",
+      "type_name": "Physiologic Function"
+    }
+  ]
+}

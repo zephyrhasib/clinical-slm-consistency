@@ -1,0 +1,5 @@
+category_letter,category_name,n_pairs,fraction,n_total,krippendorff_alpha
+A,content_disagreement,21,0.84,25,0.2923497267759564
+B,format_variation,0,0.0,25,0.2923497267759564
+C,degeneracy,4,0.16,25,0.2923497267759564
+D,mixed,0,0.0,25,0.2923497267759564

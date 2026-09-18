@@ -1,0 +1,6 @@
+Metric,Qwen,Gemma,Phi-4
+BERTScore,+0.97 ✓,+0.80 ✓,+0.65 ✓
+ROUGE-L,+0.79 ✓,+0.77 ✓,-0.02 n.s.
+Concept-set F1,+0.54 ✓,+0.67 ✓,+0.71 ✓
+Numeric Jaccard,-0.85 n.s.,+0.27 n.s.,-0.30 n.s.
+NLI contradiction,+0.68 ✓,-0.70 n.s.,+0.18 n.s.

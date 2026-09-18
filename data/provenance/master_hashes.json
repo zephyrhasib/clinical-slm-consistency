@@ -1,0 +1,590 @@
+{
+  "project": "clinical-slm-quantization-audit",
+  "generated_at": "2026-05-29T03:32:30Z",
+  "llama_cpp": {
+    "tag": "b9283",
+    "commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1",
+    "cuda_arch": "SM_120 (Blackwell \u2014 RTX 5060)",
+    "cmake_flags": "-DGGML_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=120 -DCMAKE_BUILD_TYPE=Release",
+    "binaries": {
+      "llama-completion": "5639d14aa4bc5af86b600f048f7a94e83c2c445d65d362bf3da5788e8f3452b2",
+      "llama-quantize": "e8c5e7eecb56841a5dfb9f2bb6a28406ba1d9e9ac510689a16e0eee7a6b36035"
+    }
+  },
+  "models": {
+    "f16": {
+      "qwen_medicare_bd_f16.gguf": {
+        "sha256": "0693d19bc4e545920f5fae756e26249ce0ea7611b5b9b5faef0a3bf9825ffd41",
+        "size_gb": 6.178,
+        "hf_repo": "CBrootA/Qwen-MediCare-BD",
+        "arch": "Qwen2ForCausalLM"
+      },
+      "gemma_3_4b_it_f16.gguf": {
+        "sha256": "c2b200ede3dfa70c3f9d4860e2fd462e0d015ee634ff0e9bf55d73047990b9cf",
+        "size_gb": 7.768,
+        "hf_repo": "google/gemma-3-4b-it",
+        "arch": "Gemma3ForConditionalGeneration"
+      },
+      "phi4_mini_instruct_f16.gguf": {
+        "sha256": "d4cca1cf1830f669c5dbd4414a3b3d196388985cbdcf257183e332cb89a69c65",
+        "size_gb": 7.681,
+        "hf_repo": "microsoft/Phi-4-mini-instruct",
+        "arch": "Phi3ForCausalLM"
+      }
+    },
+    "quantized": {
+      "qwen_medicare_bd_Q6_K.gguf": {
+        "sha256": "1b89c9479a2022543f4cb21233797a3e7c9079f735c1dbb1372426f9d6b7cb2a",
+        "size_gb": 2.538,
+        "model": "Qwen-MediCare-BD",
+        "level": "Q6_K",
+        "derived_from": "qwen_medicare_bd_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "qwen_medicare_bd_Q5_K_M.gguf": {
+        "sha256": "32a0a2c9574dcbff7e80ab7ba4d1e55c4635dcea0de50365a2a526e13bd2fc2e",
+        "size_gb": 2.225,
+        "model": "Qwen-MediCare-BD",
+        "level": "Q5_K_M",
+        "derived_from": "qwen_medicare_bd_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "qwen_medicare_bd_Q4_K_M.gguf": {
+        "sha256": "4eb29d7954cd798b72121d51a1726d3d4c0a5c768c800e095cf80a27ae9e1ec6",
+        "size_gb": 1.93,
+        "model": "Qwen-MediCare-BD",
+        "level": "Q4_K_M",
+        "derived_from": "qwen_medicare_bd_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "qwen_medicare_bd_Q3_K_M.gguf": {
+        "sha256": "687c0faaec94c19ef0bb8313738ea1ddd082985172979b899ef8998a7b94493b",
+        "size_gb": 1.59,
+        "model": "Qwen-MediCare-BD",
+        "level": "Q3_K_M",
+        "derived_from": "qwen_medicare_bd_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "gemma_3_4b_it_Q6_K.gguf": {
+        "sha256": "e37ff875db75d1134380c2272675ca30a0cf066983d6baada06cb2e6950c5ae8",
+        "size_gb": 3.191,
+        "model": "Gemma-3-4B-it",
+        "level": "Q6_K",
+        "derived_from": "gemma_3_4b_it_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "gemma_3_4b_it_Q5_K_M.gguf": {
+        "sha256": "f52645dd8fe9909dbc032426c27afbab039c04e99ad87e8f2aeb6584afe09c4a",
+        "size_gb": 2.83,
+        "model": "Gemma-3-4B-it",
+        "level": "Q5_K_M",
+        "derived_from": "gemma_3_4b_it_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "gemma_3_4b_it_Q4_K_M.gguf": {
+        "sha256": "399706599e556c6bd87ae541457ad432280252847d668f30a32e849e4ea3e34d",
+        "size_gb": 2.49,
+        "model": "Gemma-3-4B-it",
+        "level": "Q4_K_M",
+        "derived_from": "gemma_3_4b_it_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "gemma_3_4b_it_Q3_K_M.gguf": {
+        "sha256": "26749a1d4b14955a667584e37087726c7f04cbe28900dbb0299bb5ba2e12545b",
+        "size_gb": 2.098,
+        "model": "Gemma-3-4B-it",
+        "level": "Q3_K_M",
+        "derived_from": "gemma_3_4b_it_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "phi4_mini_instruct_Q6_K.gguf": {
+        "sha256": "b28d572d7e2f90b5a0a56515402bdf9a51788f4011466b1373c0f3595f4754bd",
+        "size_gb": 3.156,
+        "model": "Phi-4-mini-instruct",
+        "level": "Q6_K",
+        "derived_from": "phi4_mini_instruct_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "phi4_mini_instruct_Q5_K_M.gguf": {
+        "sha256": "aad1b46c2a0b611b5e1d721ddd73da1d9e11a54c5fd639d858e0460413d5cbdd",
+        "size_gb": 2.815,
+        "model": "Phi-4-mini-instruct",
+        "level": "Q5_K_M",
+        "derived_from": "phi4_mini_instruct_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "phi4_mini_instruct_Q4_K_M.gguf": {
+        "sha256": "39cd8713fd07b57e9fec48e787a94bc63ca0158f8b510a23a4f3e5552a26377f",
+        "size_gb": 2.494,
+        "model": "Phi-4-mini-instruct",
+        "level": "Q4_K_M",
+        "derived_from": "phi4_mini_instruct_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      },
+      "phi4_mini_instruct_Q3_K_M.gguf": {
+        "sha256": "03193f20772a19815bfe0b1d9dd04376ccac27837e0287d3d395aed1da509308",
+        "size_gb": 2.121,
+        "model": "Phi-4-mini-instruct",
+        "level": "Q3_K_M",
+        "derived_from": "phi4_mini_instruct_f16.gguf",
+        "llama_cpp_commit": "bbce619adb409880fb6db850a1c5a5f36a4dc7b1"
+      }
+    }
+  },
+  "main_run": {
+    "outputs": {
+      "gen_qwen_medicare_bd_Q6_K_main.csv": {
+        "sha256": "dbd784bc286be7be0a31283ea563eca9b393b91ba533bf870f66a7e0da24b84a",
+        "size_bytes": 2169360,
+        "row_count": 2000
+      },
+      "gen_qwen_medicare_bd_Q5_K_M_main.csv": {
+        "sha256": "6a175cd08336a53e3dd0cc06c390cf4155276a0086df3459430d527c38485cf0",
+        "size_bytes": 2481436,
+        "row_count": 2000
+      },
+      "gen_qwen_medicare_bd_Q4_K_M_main.csv": {
+        "sha256": "11559b078556f5630964cf181fcbb01a885d437b7f8ef9aa984162d2d466c053",
+        "size_bytes": 2494843,
+        "row_count": 2000
+      },
+      "gen_qwen_medicare_bd_Q3_K_M_main.csv": {
+        "sha256": "c5d2c8a1a86e4e7240e6a2d546e2b5b8f0761c8dbda050e6d7a2de0396c2c8c4",
+        "size_bytes": 2693967,
+        "row_count": 2000
+      },
+      "gen_gemma_3_4b_it_Q6_K_main.csv": {
+        "sha256": "397d26b2086177ef8f0f951a943c5645a585ea974e3d84abac7e5603696dce9f",
+        "size_bytes": 4383324,
+        "row_count": 2000
+      },
+      "gen_gemma_3_4b_it_Q5_K_M_main.csv": {
+        "sha256": "144129b14e03df0628e0f21261276dd986684373b56d597c7d67ca12f3cd361c",
+        "size_bytes": 4233540,
+        "row_count": 2000
+      },
+      "gen_gemma_3_4b_it_Q4_K_M_main.csv": {
+        "sha256": "e32e093a4079aa98136c7e5f24bd10607d0668d4f8df70863bd57872daf2d3b6",
+        "size_bytes": 4142076,
+        "row_count": 2000
+      },
+      "gen_gemma_3_4b_it_Q3_K_M_main.csv": {
+        "sha256": "8a07b1e5f840effe4d8b7e8a6b33ad8c63a0b547979b67447f50f0f2715d2114",
+        "size_bytes": 4132708,
+        "row_count": 2000
+      },
+      "gen_phi4_mini_instruct_Q6_K_main.csv": {
+        "sha256": "e2b285f0de4cdc72acd5d596df5d0a1bb5fa0bfa63c778cb213d61cb2c077651",
+        "size_bytes": 3152402,
+        "row_count": 2000
+      },
+      "gen_phi4_mini_instruct_Q5_K_M_main.csv": {
+        "sha256": "f2c142e0396037908e2dc729e6b37fb26bfb0cb80a2867279488cf8021fcd81f",
+        "size_bytes": 3146654,
+        "row_count": 2000
+      },
+      "gen_phi4_mini_instruct_Q4_K_M_main.csv": {
+        "sha256": "d3bb1ca13e7065110ed8c1606f5e547f3797646b8207d96f8057a34102ab93ed",
+        "size_bytes": 3065661,
+        "row_count": 2000
+      },
+      "gen_phi4_mini_instruct_Q3_K_M_main.csv": {
+        "sha256": "21119ba60e9fe9341114d7b1f96f16692e3a8322f35fbdefc9c85c3659a799e2",
+        "size_bytes": 2461697,
+        "row_count": 2000
+      }
+    },
+    "sidecars": {
+      "gen_qwen_medicare_bd_Q6_K_main_metadata.json": {
+        "sha256": "70d594abb970b4ea36c05b60de2e6f6e247758806b1a4973a81c5a8214cd3491",
+        "size_bytes": 2924
+      },
+      "gen_qwen_medicare_bd_Q5_K_M_main_metadata.json": {
+        "sha256": "697a6f8ff749094c03ccb9de1e638cbd4c118471cbae27c0572be2f7cbce5aa1",
+        "size_bytes": 2932
+      },
+      "gen_qwen_medicare_bd_Q4_K_M_main_metadata.json": {
+        "sha256": "8311ece172e53599bbf0e092079203e6bb7072cdb7f591da21a88d23fb7922a1",
+        "size_bytes": 2932
+      },
+      "gen_qwen_medicare_bd_Q3_K_M_main_metadata.json": {
+        "sha256": "f6e85070bd8316aff082eaf5bb2d08e651bc0665b556766c37094687f4ffc5cb",
+        "size_bytes": 2932
+      },
+      "gen_gemma_3_4b_it_Q6_K_main_metadata.json": {
+        "sha256": "b398fbdbd24a4596d560f13743b03dd8fc61de5b67b6854eda72039d4f9bfc29",
+        "size_bytes": 2483
+      },
+      "gen_gemma_3_4b_it_Q5_K_M_main_metadata.json": {
+        "sha256": "d73ff605deb5693b264b06a51f6eed39cee40b04c483d63b9d321dd42a76ce37",
+        "size_bytes": 2491
+      },
+      "gen_gemma_3_4b_it_Q4_K_M_main_metadata.json": {
+        "sha256": "568068e0e450feeea19bb24ada76e230684f1731a8a15b2b0811dfb6cb58a6fe",
+        "size_bytes": 2491
+      },
+      "gen_gemma_3_4b_it_Q3_K_M_main_metadata.json": {
+        "sha256": "fe12e95cd53ee619533ca7f06c11113400b3a3c5317635618f87122bbbb8b297",
+        "size_bytes": 2491
+      },
+      "gen_phi4_mini_instruct_Q6_K_main_metadata.json": {
+        "sha256": "3fa398523a9803227744f26d656c3902b16f6051c6587839fd9984e7add7f470",
+        "size_bytes": 2695
+      },
+      "gen_phi4_mini_instruct_Q5_K_M_main_metadata.json": {
+        "sha256": "4cfb53d28b6e2a4da2e046766224a879daf70a1a4fa41c3db762004a989cd7f3",
+        "size_bytes": 2703
+      },
+      "gen_phi4_mini_instruct_Q4_K_M_main_metadata.json": {
+        "sha256": "e1f219c068d096e5384706a9c1c3a9b35834d038ab6aeddc400ab52ff8f1161f",
+        "size_bytes": 2703
+      },
+      "gen_phi4_mini_instruct_Q3_K_M_main_metadata.json": {
+        "sha256": "4b22b323844a91348d96d4a3212cb096b9f204c8d459b55f673d6267510c6096",
+        "size_bytes": 2703
+      }
+    },
+    "logs": {
+      "main_run_qwen_20260526_192248.log": {
+        "sha256": "00a6ba9bf69483a8f1353b2ee81661bcb4b988837c4e7cb08516b1dfe599065b",
+        "size_bytes": 56786
+      },
+      "main_run_qwen_20260526_203521.log": {
+        "sha256": "7236b75688abc4d1a4ce10cc4f0a6815019f077722bdbc7a2b81691d4a19407e",
+        "size_bytes": 277661
+      },
+      "main_run_qwen_20260527_080946.log": {
+        "sha256": "975a2f3d27528b2eaad69d4db9fc0f8c06388a1b976e71eb8762c707c85dc04c",
+        "size_bytes": 338447
+      },
+      "main_run_gemma_20260527_101503.log": {
+        "sha256": "a8fe0a9f4a0c8e0d49c4f6ca89f5344ff6db505fead2acbe74afce7b2baa2716",
+        "size_bytes": 368652
+      },
+      "main_run_phi4_20260528_073555.log": {
+        "sha256": "bdd383963a6539b48e235da6363caa58336b27bea3506ef7a72898b57f69fe24",
+        "size_bytes": 370443
+      }
+    },
+    "provenance": {
+      "per_cell_provenance.csv": {
+        "sha256": "b752c54fa1834cb8b6a02cc048e92023df81e5c80e522aadd8ec55ac5d93aaca",
+        "size_bytes": 11023
+      },
+      "per_cell_provenance.json": {
+        "sha256": "bfa913c5e62c84c7dc34f449fd6287e748554706fb0b3330a17a35cf9f40024e",
+        "size_bytes": 21846
+      },
+      "run_timeline.json": {
+        "sha256": "0eeff30b5c7f25654f081be2c8044142a64933926276cea4a1575437c8ebe3e3",
+        "size_bytes": 2758
+      },
+      "file_integrity.csv": {
+        "sha256": "0d36397c8a69f2328f8d83c5982093b387e755ff96d59d98caddea863b225934",
+        "size_bytes": 4060
+      },
+      "file_integrity.json": {
+        "sha256": "9953399f103caaba678186937474c552b141fcb37bcea1e626de6535a5565bf4",
+        "size_bytes": 6696
+      },
+      "preflight_verification.json": {
+        "sha256": "63920de659326619229583c479d0033c608853989654fd27487f1c8fb69623fc",
+        "size_bytes": 4905
+      },
+      "environment_capture.json": {
+        "sha256": "fa53b83c2b4090f498f6bea154086f468a07feff15c6dec210cc0bb745dbd5aa",
+        "size_bytes": 1317
+      },
+      "git_state.json": {
+        "sha256": "1274128a5139156413f641a75e44f6370b4bf385a8eccddb35e9fe6acb80ea6b",
+        "size_bytes": 1057
+      },
+      "qwen_interruption_log.json": {
+        "sha256": "e6aed3f1e36fb9d9cec62aa18b93910f60b0e05ee8c5525e6388b7dcb67d97ff",
+        "size_bytes": 2803
+      },
+      "provenance_README.md": {
+        "sha256": "0ef52e77f67d66c5cea82749e856887b4bb7490f758f38cd4d1ac863a40db631",
+        "size_bytes": 7381
+      }
+    }
+  },
+  "dataset": {
+    "aci_bench_full.csv": {
+      "sha256": "923cac77865fd723e4086ea4c890e5c7a70b52e43949df1fb87b7e1b75829da1"
+    },
+    "main_inputs.csv": {
+      "sha256": "4ff93f0eecc6bba4a3001c11a633800a386fd4fa2ea1d03a1547f14ca0b0362d"
+    },
+    "pilot_inputs.csv": {
+      "sha256": "20ba7175829e7db184d4203f587adf7df4d69882ccadbab3ae7b279247613673"
+    },
+    "all_references.csv": {
+      "sha256": "77cd6aad30b2b90ab1f75cb81ac5a4eccbed8e8b0a4eeb9ec7593c70b95997ba"
+    },
+    "stratification_metadata.json": {
+      "sha256": "cacb4ce8de172fc8490f13503422acd78ea76ab65501dabda963d0d565f6367a"
+    }
+  },
+  "contamination_audit": {
+    "model_a_minhash_audit.json": {
+      "sha256": "a2ba83337724cbf586d9aeb248143c6744c7a05c7b310e64e52dc58f2522dc40"
+    },
+    "model_b_probe_audit.json": {
+      "sha256": "1d2db34a09c3ecce27231dceb324066aa64071093550e5493dc2628c4db5be6f"
+    },
+    "model_c_probe_audit.json": {
+      "sha256": "28c392119ccb5898a81ef00e7a1afdafd352a4f4c8ca9ca02fe51f1b8bcbe20f"
+    },
+    "audit_summary.json": {
+      "sha256": "9e689fd1208bd7a06fcd084c637e9593cf2204791c7bc13153c6bc482da2d588"
+    }
+  },
+  "pilot_eval": {
+    "bertscore_inspection_pairs.csv": {
+      "sha256": "1dd3caca47a5be957d9e86ecfc2ac4513ef7c1cae97bed05dfadf1c9e9a29fb7",
+      "size_bytes": 35786
+    },
+    "bertscore_inspection_pairs_blinded.csv": {
+      "sha256": "9d87f071db37a931dc51f03fe5145b1a7e51da709c738dae6fa520240677e708",
+      "size_bytes": 34984
+    },
+    "bertscore_panel_categories.csv": {
+      "sha256": "53c639059efe79856d4df7300b5a613ff6dc7543d0b58dc67b365db612c95151",
+      "size_bytes": 912
+    },
+    "bertscore_validation_report.csv": {
+      "sha256": "5fd7300475df49245523fcd1e3e6448ddaae2102902822c63c44622f3e20e647",
+      "size_bytes": 279
+    },
+    "metric_results.csv": {
+      "sha256": "2033301c07646915f95c88c42c52dff01fcd763adc7151a886b56cf39ac3ae9a",
+      "size_bytes": 46313
+    },
+    "metric_results_nli.csv": {
+      "sha256": "e9955dfe7d693b520d4f1cb0bd9817ef6b32eb15dab3006b215f4e29b3408fb9",
+      "size_bytes": 37341
+    },
+    "nli_panel_scores.csv": {
+      "sha256": "7bc704a25fc2f7551f49786bee7772982d6893c4a81f8370ce9ea9fe69621ad5",
+      "size_bytes": 1608
+    },
+    "nli_panel_validation_report.csv": {
+      "sha256": "212eeb9dbd06880d380b37dde7345168767e8c82938ae2491c9b66dab3c7d4bc",
+      "size_bytes": 689
+    },
+    "nli_validation_pairs.csv": {
+      "sha256": "aa78d2709eaa71544723a3b9c0229a678b02cd4c1a7a53164454b6f55d320ce5",
+      "size_bytes": 107727
+    },
+    "nli_validation_pairs_blinded.csv": {
+      "sha256": "7e52e4ee08fbbf4e87bbfee829db74e46b4018b5046f928d04ee1984dae726ae",
+      "size_bytes": 105642
+    },
+    "pilot_combined.csv": {
+      "sha256": "a486f4a942b98508fabdfc904de3f63e51dc3d1326b3527e49deea3325d3753f",
+      "size_bytes": 1588007
+    },
+    "pilot_combined_clean.csv": {
+      "sha256": "0ebaf3a67811428f312d5e28a7db0fd52efd3d2181c65e22b0ab4857d34a601b",
+      "size_bytes": 1132483
+    },
+    "power_analysis.csv": {
+      "sha256": "c8698d50c26efd50de808b200b3860b8122f534922b1097385e060200e9207b0",
+      "size_bytes": 572
+    },
+    "power_curve.png": {
+      "sha256": "7466f405b7ed4b3b51ef1b8bd24259dba510de2f2bf559cb403b9fb82b291e8b",
+      "size_bytes": 114833
+    },
+    "stat_omnibus.csv": {
+      "sha256": "30700ee4485f5eab52ab70d174fca43f57745fd6ba9a985a875e6fc510b74def",
+      "size_bytes": 2377
+    },
+    "stat_pairs.csv": {
+      "sha256": "9cf86377b5ad5bbc216893081d306c28808bf4d056e95ba2411238dbd4f220db",
+      "size_bytes": 14026
+    },
+    "stat_pairs_ungated.csv": {
+      "sha256": "dc96e1ee96f9c04f51f9ba6e1ec868dd8a3f0f305bd044605019f927e9a7496a",
+      "size_bytes": 32379
+    },
+    "stat_summary.csv": {
+      "sha256": "6a66fe86a686a2205c5109bd50e9ff738baf2814457a58899c61042fc93c67b0",
+      "size_bytes": 8898
+    },
+    "stat_summary_ungated.csv": {
+      "sha256": "6a66fe86a686a2205c5109bd50e9ff738baf2814457a58899c61042fc93c67b0",
+      "size_bytes": 8898
+    }
+  },
+  "pilot_generation_test_batch_1": {
+    "gen_gemma_3_4b_it_Q3_K_M_test.csv": {
+      "sha256": "f6fd5669d34a3f16a3b93526d20481c8e2fbd4821e782eea132173ad5c626ec6",
+      "size_bytes": 162442
+    },
+    "gen_gemma_3_4b_it_Q3_K_M_test_metadata.json": {
+      "sha256": "91d8e8cb50f264f39c80dbbab5bd25b478dd44fd60dfa019f0afc9b34a6740a7",
+      "size_bytes": 2373
+    },
+    "gen_gemma_3_4b_it_Q4_K_M_test.csv": {
+      "sha256": "54c5b1592bf2b5b773e8e99cdeb0d2098abfcdf393d004b2dfbde2b817c7c81c",
+      "size_bytes": 176196
+    },
+    "gen_gemma_3_4b_it_Q4_K_M_test_metadata.json": {
+      "sha256": "bc358e71de8b796c595bbb75104848fc71b44b3e3d8430188ab980385a367ca6",
+      "size_bytes": 2373
+    },
+    "gen_gemma_3_4b_it_Q5_K_M_test.csv": {
+      "sha256": "ae2ba957b0e045221ef4b64824ed197316358cf3191e6a381664b81ca220652c",
+      "size_bytes": 173499
+    },
+    "gen_gemma_3_4b_it_Q5_K_M_test_metadata.json": {
+      "sha256": "943131e25055885a2b21b4d619367ca9e70cc06546791c14790641830d1e57df",
+      "size_bytes": 2373
+    },
+    "gen_gemma_3_4b_it_Q6_K_test.csv": {
+      "sha256": "5bc0ff7b34dc37d0021b7cf21ee8e7fb2943d4d5e6f06c71d1355f0c133a650a",
+      "size_bytes": 178911
+    },
+    "gen_gemma_3_4b_it_Q6_K_test_metadata.json": {
+      "sha256": "8257cd701411d21c9624fb13128feea4c12728288a565f1b67eedf3de6e59ef2",
+      "size_bytes": 2365
+    },
+    "gen_phi4_mini_instruct_Q3_K_M_test.csv": {
+      "sha256": "0ddbf66fc481ca82c04699f5223381d9af6a0d860cd8cff83b3711ff684c3ade",
+      "size_bytes": 100925
+    },
+    "gen_phi4_mini_instruct_Q3_K_M_test_metadata.json": {
+      "sha256": "580832ce6dab68dda5c3c04fab7cf0d942f2f35d6880039e5511dd3c58209ada",
+      "size_bytes": 2584
+    },
+    "gen_phi4_mini_instruct_Q4_K_M_test.csv": {
+      "sha256": "50684c8b2808fb523615555b7ada77d3db21bda807fce390499e8f3b1efb2375",
+      "size_bytes": 130476
+    },
+    "gen_phi4_mini_instruct_Q4_K_M_test_metadata.json": {
+      "sha256": "296b3869f9952212989f75b72f66f94c810d8334eb67e0c3e1894f67905fa237",
+      "size_bytes": 2584
+    },
+    "gen_phi4_mini_instruct_Q5_K_M_test.csv": {
+      "sha256": "1b23fe1e23ffb0770cd1383b0eeaaaf17a2afb66783642285359ada4cfcfba91",
+      "size_bytes": 134783
+    },
+    "gen_phi4_mini_instruct_Q5_K_M_test_metadata.json": {
+      "sha256": "114b74e876dfa965a7257a8584f3a1f5515d573e28ac5f28afec700e9eb75eaa",
+      "size_bytes": 2584
+    },
+    "gen_phi4_mini_instruct_Q6_K_test.csv": {
+      "sha256": "f57b304d799080d6830d0c2f8cd6f898b0128934aaba4c8ba1dbd00afd05d950",
+      "size_bytes": 126624
+    },
+    "gen_phi4_mini_instruct_Q6_K_test_metadata.json": {
+      "sha256": "2d788873d3508044be7f03593d69c31efe1387e04837840e8092e021742eb03e",
+      "size_bytes": 2576
+    },
+    "gen_qwen_medicare_bd_Q3_K_M_test.csv": {
+      "sha256": "f89c8bb6ed427dab850277b447432989470a439bc13b4a1fb1286831e85c49d3",
+      "size_bytes": 112813
+    },
+    "gen_qwen_medicare_bd_Q3_K_M_test_metadata.json": {
+      "sha256": "ef9f09bcc5bcb691f42b6e207de29abcaf131bc5499e491bc4a70968967227e3",
+      "size_bytes": 2814
+    },
+    "gen_qwen_medicare_bd_Q4_K_M_test.csv": {
+      "sha256": "6ea581fbb97c2a1ab63e59351638c5813f1ef509455e6414b7389bcc1f8b2507",
+      "size_bytes": 99194
+    },
+    "gen_qwen_medicare_bd_Q4_K_M_test_metadata.json": {
+      "sha256": "2dc69f6f3538332be5258977e6fd3de06b4eb36e324653c356f661d7f63614cc",
+      "size_bytes": 2814
+    },
+    "gen_qwen_medicare_bd_Q5_K_M_test.csv": {
+      "sha256": "55973d56cf5fb9742991d69e56f0d67ee2f3bf546f46b904e7c83c964ebc4804",
+      "size_bytes": 103919
+    },
+    "gen_qwen_medicare_bd_Q5_K_M_test_metadata.json": {
+      "sha256": "11a24ac7ae74fe4650914e394c15afb33f088be3dec8c1976f0dc7bb1f52c6f1",
+      "size_bytes": 2814
+    },
+    "gen_qwen_medicare_bd_Q6_K_test.csv": {
+      "sha256": "5983ad22b57b3d5071c0cfbba05987a72761e7796d8f97ef0b223da337819647",
+      "size_bytes": 89820
+    },
+    "gen_qwen_medicare_bd_Q6_K_test_metadata.json": {
+      "sha256": "c06c07490844f80ab4ffb40df29b5b680315f0ed4709c09b24bafc0db9121da1",
+      "size_bytes": 2806
+    }
+  },
+  "panel_raw": {
+    "bertscore_claude.txt": {
+      "sha256": "c7bd865ef008c8a2364f1cf3158c03b3ed350cc8bc09162b17e4375894ec517b",
+      "size_bytes": 5424
+    },
+    "bertscore_deepseek.txt": {
+      "sha256": "9b94e5c32463312f94011d8b5b3d49bcaaab768be350773711b0f8f5d84e8b6e",
+      "size_bytes": 4047
+    },
+    "bertscore_gemini.txt": {
+      "sha256": "311ef808de9c94f5d651b76da4e4d31d4e5a10295e22b86e99bba5c7468db5a8",
+      "size_bytes": 3912
+    },
+    "nli_claude.txt": {
+      "sha256": "cfcce08778b8dc7404cf6716f4aecadfa334ca2186412fd6589e1017912a1600",
+      "size_bytes": 25258
+    },
+    "nli_deepseek.txt": {
+      "sha256": "eb4a7245e784c1a41c0d017ef90ba0a16a955f425d2a60dffb6d0f69801b9951",
+      "size_bytes": 5970
+    },
+    "nli_gemini.txt": {
+      "sha256": "f9e5106ac4901b5d6d5087bfb23f1fa42a4bdfdea17886062af95b229877c81e",
+      "size_bytes": 15314
+    },
+    "prompt/README.md": {
+      "sha256": "e4215225b908749ee6ebfcc23ac3ce3bc2a2a25b5bf26e073e4b9f5bc3495c3a",
+      "size_bytes": 2603
+    },
+    "prompt/bertscore_batch_1_of_3_BVAL-001-BVAL-005.txt": {
+      "sha256": "2330a5499dd20bb2d493bb1ea80340ebf4841ec2941003b66fa800f7f44960e2",
+      "size_bytes": 12087
+    },
+    "prompt/bertscore_batch_2_of_3_BVAL-006-BVAL-010.txt": {
+      "sha256": "d085693963a5969c90c2de0164c6f87026d895829ab3dbd9cf47cd8c51709c8c",
+      "size_bytes": 11512
+    },
+    "prompt/bertscore_batch_3_of_3_BVAL-011-BVAL-015.txt": {
+      "sha256": "7ce772754e9e53c8b160a3f2e70b9d9b439d15b9d8d2b37b9e78b9f6197f6d2d",
+      "size_bytes": 16052
+    },
+    "prompt/nli_batch_1_of_7_P01-P05.txt": {
+      "sha256": "e5e57a982ccacbb4824f363286d37d98fd29c26349824357f7f691a911093e70",
+      "size_bytes": 20911
+    },
+    "prompt/nli_batch_2_of_7_P06-P10.txt": {
+      "sha256": "b54879ba5b3e4843250306f59f26dc2e668246af08bc323551098a6f0ea58ec9",
+      "size_bytes": 21696
+    },
+    "prompt/nli_batch_3_of_7_P11-P15.txt": {
+      "sha256": "907a49543f25a001c6f88c692662dcc96b2cfc68ae77a93da98773c591e483df",
+      "size_bytes": 14179
+    },
+    "prompt/nli_batch_4_of_7_P16-P20.txt": {
+      "sha256": "211aa8ab139a26c06e86661158c1ec703dfd2870bdabe41cef9660840a9169a2",
+      "size_bytes": 15903
+    },
+    "prompt/nli_batch_5_of_7_P21-P25.txt": {
+      "sha256": "949bc9aa233a8a67c616b50f9407ac3080851cbc3b20af4c927da9269726d6b1",
+      "size_bytes": 13999
+    },
+    "prompt/nli_batch_6_of_7_P26-P30.txt": {
+      "sha256": "02d4c024508ee6d8892cd3250ccc6ded8a1ff87164d45928bf72acd0ad149b3b",
+      "size_bytes": 11538
+    },
+    "prompt/nli_batch_7_of_7_P31-P36.txt": {
+      "sha256": "3425623d462d61f54620f28ca6f696f8752fa010bed7df377e8dce263f77362a",
+      "size_bytes": 14947
+    }
+  },
+  "registry_note": "Complete project hash registry. Sections: llama_cpp (binaries), models (f16+quantized), main_run (outputs/sidecars/logs/provenance), dataset, contamination_audit, pilot_eval, pilot_generation_test_batch_1, panel_raw. master_hashes.json's OWN hash is in outputs/main_run/provenance/master_hashes.sha256 (not self-referenced)."
+}

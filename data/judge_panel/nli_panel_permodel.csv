@@ -1,0 +1,13 @@
+scope,aggregation,n,spearman_rho_cell,spearman_p_cell,spearman_rho_pair,spearman_p_pair,krippendorff_alpha_ordinal
+ALL,nli_contradiction_mean_mean,60,-0.1338,0.3082,-0.2176,0.0948,0.5485
+ALL,nli_contradiction_q90_mean,60,-0.3531,0.0056,-0.4172,0.0009,0.5485
+ALL,nli_contradiction_max_mean,60,-0.4273,0.0007,-0.4129,0.001,0.5485
+Gemma-3-4B-it,nli_contradiction_mean_mean,20,-0.73,0.0003,-0.6733,0.0011,0.2669
+Gemma-3-4B-it,nli_contradiction_q90_mean,20,-0.6822,0.0009,-0.73,0.0003,0.2669
+Gemma-3-4B-it,nli_contradiction_max_mean,20,-0.5688,0.0089,-0.5528,0.0115,0.2669
+Phi-4-mini-instruct,nli_contradiction_mean_mean,20,0.3361,0.1473,-0.0063,0.979,0.5478
+Phi-4-mini-instruct,nli_contradiction_q90_mean,20,0.3032,0.1939,0.0228,0.9241,0.5478
+Phi-4-mini-instruct,nli_contradiction_max_mean,20,0.1649,0.4871,0.0958,0.6878,0.5478
+Qwen-MediCare-BD,nli_contradiction_mean_mean,20,0.4205,0.0649,0.1552,0.5135,0.0808
+Qwen-MediCare-BD,nli_contradiction_q90_mean,20,0.2353,0.318,0.1101,0.6439,0.0808
+Qwen-MediCare-BD,nli_contradiction_max_mean,20,0.2153,0.362,0.1352,0.5699,0.0808

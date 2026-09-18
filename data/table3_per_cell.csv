@@ -1,0 +1,13 @@
+Model,Quant,BERTScore,ROUGE-L,Concept-set F1,Numeric Jaccard,NLI
+Qwen-MediCare-BD,Q6_K,0.652,0.249,0.356,0.232,0.186
+Qwen-MediCare-BD,Q5_K_M,0.635,0.22,0.325,0.184,0.192
+Qwen-MediCare-BD,Q4_K_M,0.629,0.214,0.334,0.247,0.198
+Qwen-MediCare-BD,Q3_K_M,0.565,0.174,0.29,0.463,0.224
+Gemma-3-4B-it,Q6_K,0.789,0.504,0.683,0.697,0.211
+Gemma-3-4B-it,Q5_K_M,0.788,0.501,0.682,0.69,0.211
+Gemma-3-4B-it,Q4_K_M,0.78,0.48,0.665,0.638,0.2
+Gemma-3-4B-it,Q3_K_M,0.765,0.446,0.651,0.645,0.188
+Phi-4-mini-instruct,Q6_K,0.666,0.252,0.446,0.536,0.1
+Phi-4-mini-instruct,Q5_K_M,0.656,0.242,0.434,0.527,0.099
+Phi-4-mini-instruct,Q4_K_M,0.653,0.242,0.427,0.574,0.092
+Phi-4-mini-instruct,Q3_K_M,0.654,0.253,0.409,0.596,0.106
