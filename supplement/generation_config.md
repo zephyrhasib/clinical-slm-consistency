@@ -180,8 +180,7 @@ the two outputs is kept; if it is still under 30 words it is marked anomalous.
 ## 6. Quality flags (recorded, not filtered)
 
 Two independent boolean flags are recorded per generation. Flagged rows are **kept** in
-the primary analysis; a clean subset (both flags false) is available as a sensitivity
-stream.
+the primary analysis; a clean subset (both flags false) is written alongside the full dataset; no metrics were computed on it.
 
 **`is_anomalous`** — true if the output is empty, has fewer than 20 words, or matches any
 drift/injection/refusal pattern. Patterns, verbatim:
