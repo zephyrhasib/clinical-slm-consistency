@@ -97,7 +97,7 @@ computed **within** each model across its per-encounter cells (`model`, `metric_
 
 ---
 
-## Judge panel (`judge_panel/`)  Protocol and verbatim prompts: [`judge_panel.md`](judge_panel.md).
+## Judge panel (`judge_panel/`)
 
 Three LLM judges (`claude`, `gemini`, `deepseek`) scored in blinded sessions.
 
