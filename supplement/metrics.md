@@ -122,3 +122,4 @@ results were additionally bit-identical across reruns and checkpoint resumes, at
   It is used to probe where the metric signals diverge, not to certify any metric as
   correct. The panel's contradiction scores did not show positive convergent validity
   with the NLI aggregations at main scale, which the paper reports transparently.
+- Full protocol and the verbatim prompts and rubrics: [`judge_panel.md`](judge_panel.md).
