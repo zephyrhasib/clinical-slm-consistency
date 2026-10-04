@@ -51,7 +51,7 @@ Dataset: **ACI-Bench** (Yim et al., 2023, *Scientific Data*) —
 | [`generation_config.md`](supplement/generation_config.md) | Full generation protocol: the zero-shot instruction, the three native chat templates (verbatim), all decoding parameters, the complete stop-sequence lists (including Qwen's nine role-injection stops), Phi-4 looping/truncation handling, the quality-flag regexes, and sampling. |
 | [`statistics.md`](supplement/statistics.md) | Friedman + Kendall's W omnibus, Wilcoxon signed-rank (Pratt) pairwise, BCa bootstrap with the reproducible per-pair seed formula, Holm-Bonferroni, the two analysis streams, power analysis, and cross-metric agreement. |
 | [`metrics.md`](supplement/metrics.md) | The five consistency metrics (ROUGE-L, BERTScore, UMLS concept-set F1, numerical-attribute Jaccard, NLI contradiction), the three-judge panel, and the FP16-vs-FP32 verification of the NLI scoring model. |
-| [`judge_panel.md`](judge_panel.md) | The three-judge blinded panel: judges and modes, blinding, sampling of the 60 contradiction pairs and 25 categorisation pairs, batching, consensus rules, and both prompts and rubrics verbatim. |
+| [`judge_panel.md`](supplement/judge_panel.md) | The three-judge blinded panel: judges and modes, blinding, sampling of the 60 contradiction pairs and 25 categorisation pairs, batching, consensus rules, and both prompts and rubrics verbatim. |
 
 ### `data/` — computed outputs behind every table and figure
 
