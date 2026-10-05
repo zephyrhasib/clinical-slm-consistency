@@ -52,7 +52,7 @@ Dataset: **ACI-Bench** (Yim et al., 2023, *Scientific Data*) —
 | [`statistics.md`](supplement/statistics.md) | Friedman + Kendall's W omnibus, Wilcoxon signed-rank (Pratt) pairwise, BCa bootstrap with the reproducible per-pair seed formula, Holm-Bonferroni, the two analysis streams, power analysis, and cross-metric agreement. |
 | [`metrics.md`](supplement/metrics.md) | The five consistency metrics (ROUGE-L, BERTScore, UMLS concept-set F1, numerical-attribute Jaccard, NLI contradiction), the three-judge panel, and the FP16-vs-FP32 verification of the NLI scoring model. |
 | [`judge_panel.md`](supplement/judge_panel.md) | The three-judge blinded panel: judges and modes, blinding, sampling of the 60 contradiction pairs and 25 categorisation pairs, batching, consensus rules, and both prompts and rubrics verbatim. |
-| [numerical_suppression_example.md](numerical_suppression_example.md) | Worked example of numerical suppression (encounter MAIN-013, Qwen): fact counts and numerical Jaccard at all four levels, with two generations reproduced verbatim. |
+| [numerical_suppression_example.md](supplement/numerical_suppression_example.md) | Worked example of numerical suppression (encounter MAIN-013, Qwen): fact counts and numerical Jaccard at all four levels, with two generations reproduced verbatim. |
 
 ### `data/` — computed outputs behind every table and figure
 
