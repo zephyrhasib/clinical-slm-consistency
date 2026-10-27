@@ -1,7 +1,7 @@
 # Supplement — Contamination Audit
 
-This document records the pre-generation contamination audit exactly as the paper
-cites it. Two complementary methods were used, matched to what could be inspected for
+This document records the pre-generation contamination audit exactly as it was run.
+Two complementary methods were used, matched to what could be inspected for
 each model: a corpus-overlap test for the specialist model whose fine-tuning data is
 public, and a behavioral memorization probe for the two general-purpose models whose
 training data is not available. All 100 main-study encounters were screened.

@@ -7,15 +7,15 @@ metric pipeline (to be released with the full code on publication).
 
 ## Precision — two separate topics, never to be conflated
 
-This paper involves two entirely separate precision settings. They must not be confused
+This study involves two entirely separate precision settings. They must not be confused
 in this document.
 
-1. **The models under study (the subject of the paper).** The three SLMs — Qwen, Gemma,
+1. **The models under study (the subject of the study).** The three SLMs — Qwen, Gemma,
    Phi-4 — are GGUF-quantized to Q6_K / Q5_K_M / Q4_K_M / Q3_K_M, all built from FP16
-   masters. This quantization of the models is what the paper measures.
+   masters. This quantization of the models is what the study measures.
 2. **The evaluation tooling (a scoring-pipeline detail).** Separately, the NLI scoring
    model (DeBERTa-v3-large) was run in FP16 as a speed choice, verified against FP32.
-   This has nothing to do with the SLM quantization the paper studies.
+   This has nothing to do with the SLM quantization the study examines.
 
 The FP16-vs-FP32 verification described under the NLI metric below concerns **only the
 second topic** — the NLI scoring model — and never the models under test.
@@ -89,7 +89,7 @@ families (text lowercased before matching). The families:
   metric does not privilege either note.
 - Three row-aggregations are computed from the same matrix and averaged over rows:
   - **mean** — mean over columns per row, then mean over rows (least length-inflating;
-    the value the paper leads with);
+    the primary aggregation);
   - **q0.9** — 90th percentile over columns per row, then mean over rows;
   - **max** — max over columns per row, then mean over rows (the original SummaC row-max
     form; most length-inflating).
@@ -121,5 +121,5 @@ results were additionally bit-identical across reruns and checkpoint resumes, at
 - This is a **coarse ordinal instrument** — a small panel scoring on a few-level scale.
   It is used to probe where the metric signals diverge, not to certify any metric as
   correct. The panel's contradiction scores did not show positive convergent validity
-  with the NLI aggregations at main scale, which the paper reports transparently.
+  with the NLI aggregations at main scale, which is reported transparently.
 - Full protocol and the verbatim prompts and rubrics: [`judge_panel.md`](judge_panel.md).

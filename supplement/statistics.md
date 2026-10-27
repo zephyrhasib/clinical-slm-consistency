@@ -119,7 +119,7 @@ rate at δ = 0 was 0.046, confirming calibration. Full power curve
 | 0.70 | 1.000 |
 
 Effects smaller than δ ≈ 0.246 may produce non-significant results because of limited
-power rather than absence of an effect; this is noted in the paper's discussion of null
+power rather than absence of an effect; this is noted in the study's discussion of null
 findings.
 
 ---

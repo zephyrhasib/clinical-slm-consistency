@@ -17,12 +17,12 @@ for NLI contradiction, lower = more consistent.
 
 ## Headline tables
 
-**`table3_per_cell.csv`** — Table III of the paper. One row per condition (12 rows).
+**`table3_per_cell.csv`** — per-condition consistency means. One row per condition (12 rows).
 `BERTScore`, `ROUGE-L`, `Concept-set F1`, `Numeric Jaccard` are condition means over
 100 encounters; `NLI` is the contradiction mean-aggregation (lower = more consistent).
 Q6_K is each model's own baseline.
 
-**`table4_effects.csv`** — Table IV of the paper. Q6_K → Q3_K_M oriented rank-biserial
+**`table4_effects.csv`** — Q6_K → Q3_K_M effect sizes: oriented rank-biserial
 effect size per metric × model; positive = more consistent at Q6_K. `✓` = significant
 after Holm correction; `n.s.` = not significant. The Friedman omnibus was significant
 for all 21 families.
@@ -106,7 +106,7 @@ Three LLM judges (`claude`, `gemini`, `deepseek`) scored in blinded sessions.
 
 **`nli_panel_validation_report.csv`** — Spearman ρ between the panel consensus and
 each NLI aggregation, at `cell` level (n = 12) and `pair` level (n = 60), with
-`krippendorff_alpha` (ordinal, = 0.548 pooled). `is_primary` marks the paper's lead
+`krippendorff_alpha` (ordinal, = 0.548 pooled). `is_primary` marks the primary
 aggregation (`mean`).
 
 **`nli_panel_permodel.csv`** — the same validation broken down per model (`scope` =
